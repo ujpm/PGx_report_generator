@@ -12,11 +12,9 @@ TPMT,*1/*2,Intermediate Metabolizer,azathioprine,Dose Reduction,Start with reduc
 TPMT,*1/*3A,Intermediate Metabolizer,azathioprine,Dose Reduction,Start with reduced starting doses (30-80% of normal dose) and adjust based on tolerance and monitoring.
 TPMT,*2/*2,Poor Metabolizer,azathioprine,Alternative Therapy or Drastic Reduction,"For non-malignant conditions, consider alternative non-thiopurine therapy. For malignancy, start with drastically reduced doses (reduce daily dose by 10-fold and dose 3x/week)."
 TPMT,*3A/*3A,Poor Metabolizer,azathioprine,Alternative Therapy or Drastic Reduction,"For non-malignant conditions, consider alternative non-thiopurine therapy. For malignancy, start with drastically reduced doses (reduce daily dose by 10-fold and dose 3x/week)."
-
 DPYD,*1/*1,Normal Metabolizer,5-fluorouracil,Standard Dose,Use standard recommended dose and administration. Low risk of severe toxicity.
-DPYD,Heterozygous (e.g., *1/*2A),Intermediate Metabolizer,5-fluorouracil,Dose Reduction,Reduce starting dose by 50%,followed by dose titration based on toxicity. Increased risk of severe toxicity.
+DPYD,Heterozygous (e.g., *1/*2A),Intermediate Metabolizer,5-fluorouracil,Dose Reduction,Reduce starting dose by 50%, followed by dose titration based on toxicity. Increased risk of severe toxicity.
 DPYD,Homozygous (e.g., *2A/*2A),Poor Metabolizer,5-fluorouracil,Avoid Use,Avoid use of 5-fluorouracil or capecitabine. Use an alternative agent. High risk of severe, life-threatening toxicity.
-
 SLCO1B1,*1/*1,Normal function,simvastatin,Standard Dose,Prescribe desired starting dose and adjust based on clinical response. Typical risk of myopathy.
 SLCO1B1,*1/*5,Decreased function,simvastatin,Dose Limitation / Alternative,Increased risk of myopathy. Prescribe an alternative statin (e.g., atorvastatin, rosuvastatin). If simvastatin is required, limit dose to < 20 mg/day.
 SLCO1B1,*5/*5,Poor function,simvastatin,Alternative Therapy,High risk of myopathy. Prescribe an alternative statin (e.g., atorvastatin, rosuvastatin). Avoid simvastatin.
