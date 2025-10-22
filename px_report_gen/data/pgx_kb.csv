@@ -14,7 +14,7 @@ TPMT,*2/*2,Poor Metabolizer,azathioprine,Alternative Therapy or Drastic Reductio
 TPMT,*3A/*3A,Poor Metabolizer,azathioprine,Alternative Therapy or Drastic Reduction,"For non-malignant conditions, consider alternative non-thiopurine therapy. For malignancy, start with drastically reduced doses (reduce daily dose by 10-fold and dose 3x/week)."
 
 DPYD,*1/*1,Normal Metabolizer,5-fluorouracil,Standard Dose,Use standard recommended dose and administration. Low risk of severe toxicity.
-DPYD,Heterozygous (e.g., *1/*2A),Intermediate Metabolizer,5-fluorouracil,Dose Reduction,Reduce starting dose by 50%, followed by dose titration based on toxicity. Increased risk of severe toxicity.
+DPYD,Heterozygous (e.g., *1/*2A),Intermediate Metabolizer,5-fluorouracil,Dose Reduction,Reduce starting dose by 50%,followed by dose titration based on toxicity. Increased risk of severe toxicity.
 DPYD,Homozygous (e.g., *2A/*2A),Poor Metabolizer,5-fluorouracil,Avoid Use,Avoid use of 5-fluorouracil or capecitabine. Use an alternative agent. High risk of severe, life-threatening toxicity.
 
 SLCO1B1,*1/*1,Normal function,simvastatin,Standard Dose,Prescribe desired starting dose and adjust based on clinical response. Typical risk of myopathy.
