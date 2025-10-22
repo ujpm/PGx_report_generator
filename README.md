@@ -1,7 +1,6 @@
 # PGx Clinical Decision Support Tool
 
-A pharmacogenomics (PGx) tool in R to provide drug recommendations based on genetic data. This is a portfolio project for the SFD Fellowship application.
-
+A pharmacogenomics (PGx) tool in R to provide drug recommendations based on genetic data.
 ## Project Status (In Progress)
 
 This tool is currently in development. The core analysis engine is complete, and the web interface is the next step.
