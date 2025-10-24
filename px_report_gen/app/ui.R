@@ -4,7 +4,7 @@
 
 # Load required libraries
 library(shiny)
-library(shinythemes) # <-- ADD THIS LIBRARY
+library(shinythemes)
 library(DT)
 
 # Load gene choices from the CSV
@@ -49,15 +49,13 @@ ui <- navbarPage(
                  inputId = "run_query_button",
                  label = "Get Recommendation",
                  icon = icon("pills"),
-                 class = "btn-primary btn-lg" # <-- Makes the button bigger and blue
+                 class = "btn-primary btn-lg" 
                )
              ),
              
              # 4. Main Panel (for outputs)
              mainPanel(
                width = 8, 
-               # This one UI element will now show EITHER
-               # the welcome message OR the results.
                uiOutput(outputId = "main_panel_content_ui")
              )
            )
@@ -70,14 +68,13 @@ ui <- navbarPage(
            fluidRow(
              column(
                width = 8,
-               offset = 2, # Center the text a bit
+               offset = 2, 
                
-               # You can write any markdown here
                h2("About This Project"),
                p("This tool is a pharmacogenomics (PGx) clinical decision support tool that provides drug recommendations based on a patient's genetic data."),
                
                h3("Project Goal"),
-               p(" use R, R Shiny, and the application of bioinformatics principles to solve a real-world clinical problem."),
+               p("This tool was created as a portfolio project for the SFD Fellowship application. The goal is to demonstrate skills in R, R Shiny, and the application of bioinformatics principles to solve a real-world clinical problem."),
                p("The recommendation logic is based on publicly available, evidence-based guidelines from the Clinical Pharmacogenetics Implementation Consortium (CPIC) and PharmGKB."),
                
                h3("Developer Note (v1.0)"),
@@ -90,13 +87,32 @@ ui <- navbarPage(
                ),
                
                h3("Contact"),
-               p("Developed by Jean Pierre. You can find the full source code and documentation on GitHub."),
+               p("Developed by [Your Name]. You can find the full source code and documentation on GitHub."),
                tags$a(href = "https://github.com/ujpm/PGx_report_generator", 
                       "View Project on GitHub", 
-                      target = "_blank", # Opens in new tab
+                      target = "_blank",
                       class = "btn btn-default")
              )
            )
-  ) # End of tabPanel 2
+  ), # End of tabPanel 2
+  
+  
+  # -----------------------------------------------------------------
+  # NEW: FOOTER SECTION
+  # -----------------------------------------------------------------
+  footer = tagList(
+    hr(), # Adds a horizontal line
+    p(
+      "Developed by [Your Name] for the SFD Fellowship Application",
+      style = "text-align: center; color: #777;"
+    ),
+    p(
+      tags$a(href = "https://github.com/ujpm/PGx_report_generator", 
+             "View Project on GitHub", 
+             target = "_blank"),
+      style = "text-align: center;"
+    )
+  )
+  # -----------------------------------------------------------------
   
 ) # End of navbarPage
