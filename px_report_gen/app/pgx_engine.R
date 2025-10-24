@@ -13,7 +13,20 @@ library(stringr) # For handling strings
 # A simpler, but less robust way is to use a relative path:
 # pgx_db <- read_csv("../data/pgx_kb.csv")
 #
-pgx_db <- read_csv("pgx_kb.csv")
+# Let's start with the simple way:
+kb_path <- "px_report_gen/data/pgx_kb.csv"
+
+# Check if we are in the 'app' directory, adjust path if so
+if (str_ends(getwd(), "/app")) {
+  kb_path <- "../data/pgx_kb.csv"
+}
+
+pgx_db <- read_csv(kb_path)
+
+# A quick check to see if it loaded
+print("Knowledge Base loaded successfully:")
+print(head(pgx_db))
+
 # -----------------------------------------------------------------
 # Define the Core Function
 # -----------------------------------------------------------------

@@ -11,11 +11,12 @@ library(DT)
 
 # 2. Source the Core Engine
 # We go "up" one directory to find the 'scripts' folder
-source("../scripts/pgx_engine.R")
+source("pgx_engine.R")
+
 
 # 3. Load the Knowledge Base (again)
 # This object is used by the server to populate the dropdowns
-pgx_db <- read_csv("../data/pgx_kb.csv")
+pgx_db <- read_csv("pgx_kb.csv")
 
 # Define the Server logic
 server <- function(input, output, session) {

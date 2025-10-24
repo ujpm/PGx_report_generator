@@ -9,7 +9,7 @@ library(DT) # We will use this to render nice tables
 # Get the list of unique genes from our knowledge base
 # This is a bit advanced, but it makes our app "smarter"
 # It reads the CSV file *once* to populate the dropdown.
-gene_list <- readr::read_csv("../data/pgx_kb.csv")$gene
+gene_list <- readr::read_csv("pgx_kb.csv")$gene
 gene_choices <- unique(gene_list)
 
 # Define the User Interface (UI)
